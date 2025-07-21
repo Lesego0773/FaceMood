@@ -1,0 +1,75 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  filter: blur(16px) brightness(0.8);
+  opacity: 0.9;
+}
+
+h1 {
+  margin-block-start: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-block-start: 2rem;
+  background: rgba(255,255,255,0.7);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 2rem 2rem 1.5rem 2rem;
+  backdrop-filter: blur(2px);
+}
+
+#video {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  background: #fff;
+}
+
+#moodDisplay {
+  font-size: 4rem;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+audio#player {
+  inline-size: 320px;
+  margin-block-start: 1rem;
+  background: rgba(255,255,255,0.8);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 500px) {
+  #video {
+    inline-size: 100vw;
+    block-size: auto;
+  }
+  audio#player {
+    inline-size: 90vw;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
+

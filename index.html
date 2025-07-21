@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FaceMood - Emotion to Music</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.2.0"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="bg-blur"></div>
+  <h1>🎵 FaceMood</h1>
+  <p>Detect your mood and get music!</p>
+  <div class="container">
+    <video id="video" width="400" height="300" autoplay muted></video>
+    <div id="moodDisplay">😊</div>
+    <audio id="player" controls autoplay></audio>
+  </div>
+</body>
+</html>
+
